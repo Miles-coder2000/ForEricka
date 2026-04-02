@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You My Love❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(120deg,#ffe6eb,#fff5f7);
+    color:#4a2c2a;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px 60px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    opacity:0.8;
+}
+
+.heart{
+    font-size:2rem;
+    animation:beat 1.2s infinite;
+    display:inline-block;
+}
+
+@keyframes beat{
+    0%,100%{transform:scale(1);}    
+    50%{transform:scale(1.15);}    
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    margin:30px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    font-family:'Playfair Display',serif;
+    margin-bottom:15px;
+}
+
+.letter{
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.footer{
+    text-align:center;
+    padding:40px 10px 60px;
+    font-size:0.9rem;
+    opacity:0.7;
+}
+
+.highlight{
+    color:#d6336c;
+    font-weight:500;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<section class="hero">
+    <h1>For My Love<span class="heart">❤</span></h1>
+    <p>You are my favorite chapter</p>
+</section>
+
+<section class="card">
+<h2>About You, My Love Ericka</h2>
+<p>
+Ericka, you are one of the most beautiful souls I have ever known. Not just beautiful in appearance, but beautiful in the way you think, the way you care, and the way you make people feel safe just by being yourself.
+</p>
+
+<p>
+You have a gentle strength that not everyone immediately sees, but it is always there. In the way you face challenges, in the way you continue moving forward, and in the way you still choose kindness even when life becomes difficult.
+</p>
+
+<p>
+Your smile has a quiet magic to it — the kind that makes worries feel smaller and moments feel lighter. Your voice brings comfort, and your presence brings peace in a way I cannot fully explain, only deeply appreciate.
+</p>
+
+<p>
+You are thoughtful, caring, and incredibly genuine. The little things you do show how big your heart truly is. You make people feel important, valued, and understood.
+</p>
+
+<p>
+Ericka, you are special in ways that words will never be enough to fully capture. But if there is one thing I know with certainty, it is that meeting you is something I will always be grateful for.
+</p>
+</section>
+
+<section class="card">
+<h2>My Letter For You My Love</h2>
+
+<p class="letter">
+My Love Ericka,
+
+<br><br>
+There are many things I could say, yet somehow none of them ever feel enough to truly describe how much you mean to me. You came into my life quietly, but your presence became something I now cannot imagine living without.
+
+<br><br>
+You make ordinary days feel meaningful. Even simple conversations with you feel special, because everything becomes warmer and lighter when you are part of it. You have this way of turning small moments into memories worth keeping.
+
+<br><br>
+I admire your heart more than anything. The way you care, the way you try, and the way you continue to be kind even when the world is not always kind back. That strength in you is something truly rare.
+
+<br><br>
+If life ever feels heavy, I hope you remember that you do not have to carry everything alone. You deserve support, understanding, and someone who reminds you how amazing you are even on days when you forget.
+
+<br><br>
+I appreciate the way you are simply yourself — real, honest, and sincere. You do not need to pretend to be anything else, because who you already are is more than enough.
+
+<br><br>
+Every memory with you becomes something I treasure. Every conversation becomes something I look forward to. Every moment becomes something I quietly thank life for.
+
+<br><br>
+You inspire me in ways you may not even realize. You make me want to grow, improve, and become a better person — not because I have to, but because knowing you makes me want to be someone worthy of your presence.
+
+<br><br>
+No matter what happens, I want you to always remember this: you are appreciated more than you know, valued more than you think, and cared for more deeply than words can fully express.
+
+<br><br>
+Thank you for being you, My Love.
+
+<br><br>
+You are, and always will be, someone very special to me.
+</p>
+
+</section>
+
+
+<section class="footer">
+Made with love by Miles ❤
+</section>
+
+</div>
+
+<button id="musicBtn" onclick="toggleMusic()" style="position:fixed; bottom:20px; right:20px; background:#d6336c; color:white; border:none; padding:12px 18px; border-radius:999px; box-shadow:0 6px 15px rgba(0,0,0,0.15); cursor:pointer; font-family:Poppins;">
+Play Music ❤
+</button>
+
+<audio id="bgm" loop>
+    <source src="her.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function toggleMusic(){
+    const music = document.getElementById('bgm');
+    const btn = document.getElementById('musicBtn');
+
+    if(music.paused){
+        music.play();
+        btn.innerText = 'Pause Music ❚❚';
+    } else {
+        music.pause();
+        btn.innerText = 'Play Music ❤';
+    }
+}
+</script>
+
+</body>
+</html>
